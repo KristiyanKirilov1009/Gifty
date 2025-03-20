@@ -16,9 +16,9 @@ return [
     |
     */
 
-    'key' => env('STRIPE_KEY'),
+    'key' => '',
 
-    'secret' => env('STRIPE_SECRET'),
+    'secret' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -45,8 +45,8 @@ return [
     */
 
     'webhook' => [
-        'secret' => env('STRIPE_WEBHOOK_SECRET'),
-        'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
+        'secret' => '',
+        'tolerance' => '',
         'events' => WebhookCommand::DEFAULT_EVENTS,
     ],
 
@@ -87,7 +87,7 @@ return [
     |
     */
 
-    'payment_notification' => env('CASHIER_PAYMENT_NOTIFICATION'),
+    'payment_notification' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     */
 
     'invoices' => [
-        'renderer' => env('CASHIER_INVOICE_RENDERER', DompdfInvoiceRenderer::class),
+        'renderer' => '',
 
         'options' => [
             // Supported: 'letter', 'legal', 'A4'
@@ -120,6 +120,6 @@ return [
     |
     */
 
-    'logger' => env('CASHIER_LOGGER'),
+    'logger' => '',
 
 ];

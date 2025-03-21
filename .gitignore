@@ -1,0 +1,6 @@
+# filepath: .gitignore
+# Ignore everything in storage
+/storage/*
+
+# Except for storage/app/public
+!/storage/app/public

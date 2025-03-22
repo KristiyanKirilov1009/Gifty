@@ -80,7 +80,7 @@ class OrderController extends Controller
 
         SendCreateOrderNotificationJob::dispatch($order);
 
-        return redirect()->route('/shopping-cart');
+        return redirect()->route('shopping-cart');
     }
 
     /**

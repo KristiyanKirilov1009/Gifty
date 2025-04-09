@@ -76,7 +76,7 @@ class OrderController extends Controller
             $prod->save();
         }
 
-        $request->session()->flash('success', 'Order made successfully');
+        $request->session()->flash('success', 'Поръчката е успено направена!');
 
         SendCreateOrderNotificationJob::dispatch($order);
 

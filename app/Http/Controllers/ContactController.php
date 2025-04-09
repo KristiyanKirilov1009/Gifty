@@ -23,7 +23,7 @@ class ContactController extends Controller
             'description' => ['required', 'string']
         ]);
 
-        Mail::to(env('MAIL_CONTACT'))->send(new ContactFormMail($validated));
+        Mail::to(env('MAIL_FROM_USERNAME'))->send(new ContactFormMail($validated));
         return back()->with('success', 'Успешно изпратено!');
     }
 }
